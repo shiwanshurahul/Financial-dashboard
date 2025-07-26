@@ -62,7 +62,7 @@ export async function fetchCardData() {
          SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
          FROM invoices`;
 
-    const data = await Promise.all([
+    const data = await Promise.all([   //initiate all promises at the same time warna waterfall me fansega -> fers to a sequence of network requests that depend on the completion of previous requests.
       invoiceCountPromise,
       customerCountPromise,
       invoiceStatusPromise,
