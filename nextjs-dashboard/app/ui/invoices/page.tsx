@@ -7,3 +7,6 @@ export default function Page() {
 
 // layout.tsx wraps the matching page.tsx inside the folder or root
 //same directory me page.tsx se match krta
+
+
+//error.ts me error rkhte
